@@ -29,6 +29,9 @@ Simple Django To-Do App ready for deployment on Render.
    - Environment: Python
    - Build Command: `pip install -r requirements.txt`
    - Start Command: `gunicorn todo_project.wsgi --log-file -`
+
+
+                  (or)    
                       python manage.py migrate && gunicorn todo_project.wsgi:application
 
 3. Optionally set `DEBUG=False` and replace `SECRET_KEY` in production.
